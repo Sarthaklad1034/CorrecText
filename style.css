@@ -12,7 +12,247 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff;:root {
+    --primary-color: #0083ca;
+    --secondary-color: #149B9D;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar Styles */
+
+.navbar-brand {
+    font-size: 1.875rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #622569 !important;
+}
+
+.login-btn {
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    color: #666 !important;
+}
+
+.login-btn:hover {
+    background-color: #555555;
+    color: white !important;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    text-align: left;
+    bottom: 5%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.hero-overlay h2 {
+    background-color: var(--secondary-color);
+    padding: 7px 40px;
+    border-radius: 60px;
+    font-weight: 300;
+    font-size: 1.4375rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+.hero-overlay p {
+    max-width: 475px;
+    font-weight: 300;
+}
+
+.register-btn {
+    position: absolute;
+    top: 45%;
+    right: -100px;
+    background-color: var(--secondary-color);
+    color: white;
+    transform: rotate(270deg);
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    z-index: 3;
+}
+
+
+/* Map Section */
+
+.map-section {
+    height: 800px;
+    position: relative;
+}
+
+.shape-overlay {
+    position: absolute;
+    width: 140%;
+    height: auto;
+    top: 80px;
+    left: -20%;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.map-image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Services Section */
+
+.services-section {
+    background: linear-gradient(rgba(20, 155, 157, 0.842), rgba(20, 155, 157, 0.884)), url('Service background image.jpg') center/cover;
+    color: white;
+}
+
+.service-icon {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Stats Section */
+
+.stats-section {
+    background: linear-gradient(rgba(47, 115, 183, 0.74), rgba(47, 115, 183, 0.76)), url('Proven excelence background image_1920pxl.jpg') center/cover;
+    color: white;
+}
+
+.stat-card {
+    background: var(--secondary-color);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.stat-card p {
+    position: absolute;
+    bottom: -50px;
+    width: 200%;
+    left: -50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/* Contact Section */
+
+.contact-form {
+    background: white;
+}
+
+.mail-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 992px) {
+    .hero {
+        height: 400px;
+    }
+    .carousel-item img {
+        height: 400px;
+    }
+    .service-icon {
+        width: 200px;
+        height: 200px;
+    }
+    .map-section {
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h2 {
+        font-size: 1.25rem;
+        padding: 5px 20px;
+    }
+    .stat-card {
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 300px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .service-icon {
+        width: 180px;
+        height: 180px;
+    }
+}
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
